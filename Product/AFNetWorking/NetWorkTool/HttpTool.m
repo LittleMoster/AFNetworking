@@ -274,8 +274,7 @@ static BOOL _isNetwork;
             
             
         }
-    }
-    
+        
 
     NSString *strUrl1 = [contentString stringByReplacingOccurrencesOfString:@"  " withString:@""];
     
@@ -460,7 +459,7 @@ static BOOL _isNetwork;
     return YES;
 }
 
-+ (NSURLSessionTask *)uploadWithURL:(NSString *)URL
++ (NSURLSessionTask *)PostPhotoWithURL:(NSString *)URL
                          parameters:(NSMutableDictionary *)parameters
                         imageModels:(NSArray<PhotoModel*>*)imageModels
                            progress:(HttpProgress)progress

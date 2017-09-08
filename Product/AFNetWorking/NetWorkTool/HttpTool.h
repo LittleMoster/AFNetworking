@@ -175,7 +175,7 @@ typedef void(^NetworkStatus)(PPNetworkStatus status);
  *
  */
 
-+ (NSURLSessionTask *)uploadWithURL:(NSString *)URL
++ (NSURLSessionTask *)PostPhotoWithURL:(NSString *)URL
                          parameters:(NSMutableDictionary *)parameters
                         imageModels:(NSArray<PhotoModel*>*)imageModels
                            progress:(HttpProgress)progress

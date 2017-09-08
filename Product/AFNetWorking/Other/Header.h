@@ -14,11 +14,11 @@
 #define APPKEY   TestAPPKey
 #define SecretKey   TestSecretKey
 //1.正式环境
-#define  HAPPKey @"c27b0164"
-#define  HSecretKey  @"9119c8c27e284e1e928"
+#define  HAPPKey @"c27b460958c"
+#define  HSecretKey  @"9119c8c27e284effa"
 //2.测试环境
-#define  TestAPPKey @"b5da47fa"
-#define  TestSecretKey  @"9046e9bc1fa940f"
+#define  TestAPPKey @"b5da23f9c"
+#define  TestSecretKey  @"9046e9bc9f2c0fa272b726"
 //3.预上线环境
 #define  UpdateAPPKey @"c27b01646460958c"
 

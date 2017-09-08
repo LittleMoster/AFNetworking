@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+#import <Photos/Photos.h>
 #import <UIKit/UIKit.h>
 /*
  上传图片的模型类，与httpTool上传图片的方法绑定，用第三方框架获取多张图片时，传入PHAssets类型的数组，内部进行处理图片，包括压缩、图片的名称、类型、data数据等
@@ -32,6 +33,6 @@
 
 //+(NSMutableArray*)GetPhotoModelArrByPHAssetArr:(NSArray*)PHAssets;
 
-//获取图片，以及压缩图片，设置图片的尺寸
-+(NSMutableArray*)GetPhotoModelArrByPHAssetArr:(NSArray*)PHAssets imageSize:(CGSize)imagesize;
+//获取图片，以及压缩图片，设置图片的尺寸CGSizeMake(0, 0)代表原图
++(NSMutableArray*)GetPhotoModelArrByPHAssetArr:(NSArray<PHAsset*>*)PHAssets imageSize:(CGSize)imagesize;
 @end

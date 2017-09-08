@@ -6,7 +6,6 @@
 //  Copyright © 2017年 zjq. All rights reserved.
 //
 #import "PhotoModel.h"
-#import <Photos/Photos.h>
 #import "YQImageCompressTool.h"
 @implementation PhotoModel
 
@@ -18,7 +17,7 @@
     return self;
 }
 
-+(NSMutableArray*)GetPhotoModelArrByPHAssetArr:(NSArray*)PHAssets imageSize:(CGSize)imagesize
++(NSMutableArray*)GetPhotoModelArrByPHAssetArr:(NSArray<PHAsset*>*)PHAssets imageSize:(CGSize)imagesize
 {
     NSMutableArray *photoArrM=[NSMutableArray array];
     for (PHAsset *asset in PHAssets) {
