@@ -48,6 +48,8 @@
 		956D124A1F62488400D3BF39 /* TZProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 956D123A1F62488400D3BF39 /* TZProgressView.m */; };
 		956D124B1F62488400D3BF39 /* TZVideoPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 956D123C1F62488400D3BF39 /* TZVideoPlayerController.m */; };
 		956D124C1F62488400D3BF39 /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 956D123E1F62488400D3BF39 /* UIView+Layout.m */; };
+		9582C0EE1F6BA6F000B030F4 /* ZFDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9582C0EB1F6BA6F000B030F4 /* ZFDownloadManager.m */; };
+		9582C0EF1F6BA6F000B030F4 /* ZFSessionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9582C0ED1F6BA6F000B030F4 /* ZFSessionModel.m */; };
 		95D37B561F4FBC6900A609BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95D37B551F4FBC6900A609BD /* main.m */; };
 		95D37B591F4FBC6900A609BD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95D37B581F4FBC6900A609BD /* AppDelegate.m */; };
 		95D37B5C1F4FBC6900A609BD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95D37B5B1F4FBC6900A609BD /* ViewController.m */; };
@@ -158,6 +160,10 @@
 		956D123C1F62488400D3BF39 /* TZVideoPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZVideoPlayerController.m; sourceTree = "<group>"; };
 		956D123D1F62488400D3BF39 /* UIView+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Layout.h"; sourceTree = "<group>"; };
 		956D123E1F62488400D3BF39 /* UIView+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Layout.m"; sourceTree = "<group>"; };
+		9582C0EA1F6BA6F000B030F4 /* ZFDownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFDownloadManager.h; sourceTree = "<group>"; };
+		9582C0EB1F6BA6F000B030F4 /* ZFDownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFDownloadManager.m; sourceTree = "<group>"; };
+		9582C0EC1F6BA6F000B030F4 /* ZFSessionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFSessionModel.h; sourceTree = "<group>"; };
+		9582C0ED1F6BA6F000B030F4 /* ZFSessionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFSessionModel.m; sourceTree = "<group>"; };
 		95D37B511F4FBC6800A609BD /* AFNetWorking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AFNetWorking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95D37B551F4FBC6900A609BD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		95D37B571F4FBC6900A609BD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -374,6 +380,17 @@
 			path = TZImagePickerController;
 			sourceTree = "<group>";
 		};
+		9582C0E91F6BA6F000B030F4 /* ZFDownload */ = {
+			isa = PBXGroup;
+			children = (
+				9582C0EA1F6BA6F000B030F4 /* ZFDownloadManager.h */,
+				9582C0EB1F6BA6F000B030F4 /* ZFDownloadManager.m */,
+				9582C0EC1F6BA6F000B030F4 /* ZFSessionModel.h */,
+				9582C0ED1F6BA6F000B030F4 /* ZFSessionModel.m */,
+			);
+			path = ZFDownload;
+			sourceTree = "<group>";
+		};
 		95D37B481F4FBC6800A609BD = {
 			isa = PBXGroup;
 			children = (
@@ -398,6 +415,7 @@
 		95D37B531F4FBC6800A609BD /* AFNetWorking */ = {
 			isa = PBXGroup;
 			children = (
+				9582C0E91F6BA6F000B030F4 /* ZFDownload */,
 				9543C1EC1F4FC25F00345317 /* Other */,
 				9543C1A41F4FC04E00345317 /* Lib */,
 				9543C1691F4FBF8100345317 /* Model */,
@@ -579,6 +597,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9543C1DD1F4FC10600345317 /* UIRefreshControl+AFNetworking.m in Sources */,
+				9582C0EE1F6BA6F000B030F4 /* ZFDownloadManager.m in Sources */,
 				956D12481F62488400D3BF39 /* TZPhotoPreviewCell.m in Sources */,
 				9543C1621F4FBE6900345317 /* MD5Tool.m in Sources */,
 				95D37B5C1F4FBC6900A609BD /* ViewController.m in Sources */,
@@ -599,6 +618,7 @@
 				9543C1EA1F4FC12800345317 /* YYKVStorage.m in Sources */,
 				9543C1D81F4FC10600345317 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				9543C1D61F4FC10600345317 /* AFAutoPurgingImageCache.m in Sources */,
+				9582C0EF1F6BA6F000B030F4 /* ZFSessionModel.m in Sources */,
 				9543C1CE1F4FC10600345317 /* AFHTTPSessionManager.m in Sources */,
 				9543C1631F4FBE6900345317 /* HTTPCache.m in Sources */,
 				956D12411F62488400D3BF39 /* TZAssetModel.m in Sources */,
